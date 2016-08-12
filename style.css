@@ -1,0 +1,913 @@
+/*
+Theme Name: twintide
+Template: flat-bootstrap
+*/
+
+@import url("../flat-bootstrap/style.css");
+
+/* PUT YOUR CHANGED STYLES HERE */
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url(fonts/AvenirNext-Bold.woff);
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: url(fonts/DIN_Condensed_Bold.ttf);
+}
+
+body{
+    font-family:'Raleway';
+    padding-top:40px; 
+}
+
+@media screen and (max-width: 768px) {
+     body{
+        padding-top:32px;   
+     }
+}
+ 
+h1{
+    font-family:'Avenir Next'; 
+    text-transform: uppercase;
+}
+
+p{
+    font-size:1em;   
+    line-height:28px;
+}
+
+a:focus { 
+    outline: none; 
+}
+
+audio:focus {
+  outline: none;
+}
+
+#coming-soon{
+    margin:100px auto;  
+    display:block;
+    max-width:752px;
+    width:90%;
+}
+ 
+.tt-button{
+     
+}
+
+.section-title{
+    text-align:center;   
+    padding:70px 0 80px;
+}
+
+.section-title h1{
+    font-family:'Avenir Next';
+    font-size:41px;
+}
+
+.section-title p{
+     font-family:'Raleway';   
+}
+
+.section-title:after{
+     content:"";
+    width:200px;
+    height:2px;
+    margin:20px auto 0 auto;
+    display:block;   
+    background-color:#2f2f2f;
+}
+
+.green{
+     color: #00a79d !important;
+}
+
+.black{
+     color: #00a79d !important;
+}    
+
+.grey{
+     color: #00a79d !important;
+}
+
+/**********************************************
+ SECTION STYLES
+**********************************************/
+
+.section{ 
+    padding-bottom:60px;
+    border-bottom: 1px solid #D4D4D4;
+    background-color:#fff;
+}
+
+.section:nth-child(odd) {
+    background: #e9ecf1;
+}
+
+.section:after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 21px;
+    position: relative;
+    top: 81px;
+    z-index: 999;
+    background:url('http://twintide.com/wp-content/uploads/2015/10/arrow-white.png');
+    margin:0 auto;
+}
+
+.section:nth-child(odd):after {
+    background:url('http://twintide.com/wp-content/uploads/2015/10/arrow-grey.png');
+}
+
+/**********************************************
+ HEADER STYLES
+**********************************************/
+.homepage-header header{
+     //margin-top:40px;   
+    padding:30px 0;
+    z-index:999;
+}
+
+header{
+     margin-bottom:50px;  
+}
+
+
+/**********************************************
+ NAVIGATION STYLES
+**********************************************/
+
+.navbar{
+     border-radius:0 !important; 
+    
+}
+
+.navbar-default{
+    background-color: #111 !important;
+    border-bottom-color: #2f2f2f;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand{
+     clip:initial !important;   
+}
+
+.nav li .navbar-brand{
+     display:none !important;   
+}
+
+.navbar-brand img{
+     width:200px;   
+}
+
+.navbar-nav li a{
+    line-height:60px;
+    color:#fff !important;
+    font-family:'Avenir Next';
+    font-weight:700;
+    transition: 0.3s;
+}
+
+.navbar-nav li a:hover{
+    color:#00a79d !important;
+    transition: 0.3s;
+}
+
+.navbar{
+     margin-bottom:0px;   
+}
+
+.navbar-collapse{
+    border:none !important;   
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav li a{
+        line-height:inherit;
+        background-color:#111;   
+    }
+    .navbar-nav li a:hover{
+        background-color:#111 !important;   
+    }
+    .navbar-brand img{
+         width:180px;   
+    }    
+    .navbar-header{
+         height:80px;   
+    }
+    
+    .navbar-toggle{
+         margin-top:22px;   
+    }
+}
+
+/* HOMEPAGE NAVBAR STYLES */
+
+.homepage-header .navbar-default{
+    background-color: transparent !important; 
+}
+
+.homepage-header .navbar-brand img{
+     width:320px;   
+}
+
+.homepage-header .navbar-nav li a{
+    line-height:100px;
+}
+
+.homepage-header .navbar{
+     margin-top:50px;   
+}
+
+.homepage-header .navbar-default{
+    border-bottom: none;
+}
+
+/**********************************************
+ HOMEPAGE STYLES
+**********************************************/
+
+/* LANDING SECTION */
+
+#landing{
+     position:relative;
+    top:-200px;
+}
+
+.landing{
+    margin-top:200px;
+    margin-bottom:350px;
+}
+
+#about-landing.landing{
+     margin-bottom:150px;   
+}
+
+/* BACKGROUND IMAGE */
+.landing-image{
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    z-index: -999;
+}
+
+.landing-image img{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.landing h1{ 
+    color: #e9ecf1;
+    font-family:'Avenir Next';
+    text-transform: uppercase;
+    text-align:center;
+    font-size:5em;
+    text-shadow:0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.landing p{
+     color:#fff;   
+    font-size:1.5em;
+    font-weight:300;
+    text-align:center;
+    text-shadow:0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*LANDING PAGE BUTTON*/
+.landing a{
+    color:#fff; 
+    padding:20px 30px 17px 30px;
+    border:solid 3px #fff;
+    cursor:pointer;
+    text-decoration:none !important;
+    position:relative;
+    top:80px;
+    font-family:'Avenir Next';
+    font-size:.9em;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    text-shadow:0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.landing a:hover{
+    color:#fff; 
+    border:solid 3px #00a79d;
+    transition:0.3s;
+    background-color:#00a79d;
+}
+
+.landing-content{
+     padding:0 150px;   
+}
+
+
+@media screen and (max-width: 991px) {
+    .landing-content {
+        padding:0 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .landing a {
+        top:40px;
+    }
+    .landing-content {
+        padding:30px 20px 0;
+    }
+    .landing{
+        margin-top:0px;
+        margin-bottom:150px;
+    }
+    .landing h1{
+         font-size:3em;   
+    }
+    .landing-image{ 
+        top: -70%; 
+    }
+}
+
+
+/* FIND YOUR SOUND SECTION */
+
+.find-sound{  
+    overflow: hidden;
+}
+
+.find-sound a{
+    text-decoration:none !important;    
+}
+
+.find-sound div.container{
+     padding:0 100px;   
+}
+
+.find-sound img{
+     width:100%; 
+    max-height:400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.find-mood{
+     margin-top:100px;   
+}
+
+.find-genre section{
+     padding-right:100px;  
+    margin-top:80px;
+    color: #9298a0;
+    transition: 0.5s;
+
+}
+
+.find-mood section{
+     padding-left:100px;  
+    margin-top:80px;
+    color: #9298a0;
+    transition: 0.5s;
+    
+}
+
+/* HOVER EFFECTS */
+.find-sound section:before{
+    content:"";
+    width:100%;
+    height:2px;
+    background-color: #111;
+    display: block;
+}
+
+.find-genre section:before{
+     position:relative;
+    left:-1000px;
+    transition: 0.5s;
+}
+
+.find-mood section:before{
+     position:relative;
+    left:1000px;
+    transition: 0.5s;
+    
+}
+
+.find-sound a:hover img{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+.find-sound a:hover section{
+    color:#111;
+    transition: 0.5s;
+}
+
+.find-sound a:hover section:before{
+    left:0px;
+    transition: 0.5s;
+}
+
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1200px) {
+    .find-genre section{
+        padding-right:50px;  
+        margin-top:30px;
+    }
+    .find-mood section{
+        padding-left:50px;  
+        margin-top:30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .find-sound div.container{
+         padding:0 10px; 
+    }
+    .find-genre section{
+        padding-right:50px;  
+        margin-top:30px;
+    }
+    .find-mood section{
+        padding-left:50px;  
+        margin-top:30px;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .find-sound img{
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);  
+    }
+     .find-sound div.container{
+         padding:0px; 
+    }
+    .find-genre section{
+        padding-right:0px;  
+        margin-top:0px;
+    }
+    .find-mood section{
+        padding-left:0px;  
+        margin-top:0px;
+    }   
+}
+
+
+
+
+/* FEATURED SECTION */
+
+.featured{
+    //color:#111;
+}
+
+.featured h3{
+     font-family: 'Avenir Next';  
+    color:#9298a0;
+}
+
+.featured-video{
+    position:relative;
+    top:0px;
+}
+
+.featured-content{
+     padding-right:80px;   
+}
+
+@media screen and (max-width: 992px) {
+    .featured-content{
+         padding-right:0px;   
+    }
+}
+
+/* RESPONSIVE YOUTUBE VIDEO */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    height: 0; overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+
+
+/**********************************************
+ FOOTER STYLES
+**********************************************/
+footer{
+	text-align:center;
+	padding:50px 0;
+	background-color: #111;
+    //background-color:#00a79d;
+	color:#e9ecf1;
+    z-index:999999;
+}
+
+footer p{
+     font-weight:300;
+    font-size:.8em;
+}
+
+footer nav a{
+	margin:0 15px;
+	color:#e9ecf1;
+	text-decoration:none !important;
+	margin:0 20px;
+	font-family:'Avenir Next';
+    transition: 0.3s;
+}
+
+footer nav a:hover{
+	color:#00a79d;
+	transition:0.3s;
+}
+
+footer nav{
+	margin:20px auto;
+}
+
+
+@media screen and (max-width: 480px) {
+    footer nav a{
+         margin:0 10px;   
+    }
+}
+
+
+
+/**********************************************
+ MUSIC PAGE STYLES
+**********************************************/
+
+.filtered-song-list{
+     margin-bottom:100px;  
+    margin-top:100px;
+}
+
+.song-list{
+     padding:0 100px;   
+}
+
+.song-list-headers{
+     font-family:'Avenir Next';  
+    background-color:#111;
+    color: #e9ecf1;
+     margin-bottom:10px;
+    display:block;
+    padding:15px 0;
+}
+
+.song-list-item{
+    background-color:#2f2f2f;
+    margin-bottom:10px;
+    display:block;
+    padding:15px 0 5px 0;
+    font-size:1em;
+    color:#e9ecf1;
+    
+    /*-moz-animation-name: flyIn;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1s;
+
+    -webkit-animation-name: flyIn;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+
+    animation-name: flyIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;*/
+}
+
+.song-list-item div{
+   
+}
+
+.song-list-item span.song-title{
+     font-family:'Avenir Next';
+    text-transform: uppercase;
+}
+
+.song-list-item audio{
+     position:relative;
+    top:-6px;
+    float:right;
+}
+
+.song-genre, .song-mood{
+     text-transform: capitalize;   
+}
+
+.hidden-header{
+     display:none;
+    font-family: 'Avenir Next;
+}
+
+@media screen and (max-width: 992px) {
+    .song-list-item audio{
+         float:none;
+        top:0px;
+        text-align:center;
+        margin:15px auto 5px;
+        display:block;
+    }
+    .song-list{
+         padding:inherit;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hidden-header{
+        display:inherit;
+    }
+
+    .song-list-item{
+         text-align:center;   
+    }
+    .song-list-headers{
+         display:none;   
+    }
+}
+
+/*BEAUTIFUL TAXONOMY STYLES*/
+.beautiful-taxonomy-filters{
+     margin:0 0 40px 0;
+    padding:0;
+    border-radius:0;
+    box-shadow:none !important; 
+    background:transparent;
+}
+
+.beautiful-taxonomy-filters select{
+     width:150px ;   
+    border-radius:none !important;
+}
+
+.beautiful-taxonomy-filters-button{
+     background:#111;
+    font-family: 'Avenir Next';
+    color:#e9ecf1;
+    box-shadow: none !important;
+    border: solid 3px #111;
+    border-radius: 0px !important;
+    padding:10px 30px 7px 30px;
+    font-size:0.9em;
+}
+
+.beautiful-taxonomy-filters-button:hover{
+    background:  #111;
+    color:#00a79d;
+}
+
+/* LIST ITEMS ANIMATION */
+
+@-moz-keyframes flyIn {
+    0% {
+        -moz-transform: translateX(-3000px);
+    }
+    100% {
+        -moz-transform: translateX(0);
+    }
+}
+@-webkit-keyframes flyIn {
+    0% {
+        -webkit-transform: translateX(-3000px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes flyIn {
+    0% {
+        transform: translateX(-3000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/**********************************************
+ ABOUT PAGE STYLES
+**********************************************/
+
+.about-us{
+     padding: 100px 0 50px 0;
+}
+
+.about-us-content{
+     padding-left:30px;   
+}
+
+.about-us img{
+    display:block;
+    margin:0 auto;
+}
+
+.about-us a{
+    font-family:'Avenir Next';
+    font-size:.9em;
+    padding:15px 25px 12px;
+    border:solid 3px #2f2f2f;
+    color:#2f2f2f;
+    position:relative;
+    top:40px;
+    text-transform: uppercase;
+    transition:0.3s;
+    text-decoration: none !important;
+}
+
+.about-us a:hover{
+    background-color:#2f2f2f;
+    color:#fff;
+    transition:0.3s;
+}
+
+/* MEET THE TEAM STYLES */
+.team-member{
+     text-align:center;  
+    min-height:505px;
+    margin-bottom:30px;
+}
+
+.team-member h3{
+     font-family:'Avenir Next';   
+}
+
+.team-member i{
+    color:#00a79d;
+    font-weight:500;
+}
+
+.team-member p{
+     font-size:.9em;   
+    line-height:1.5em;
+    margin-top:10px;
+}
+
+.team-member img{
+     max-width:50%; 
+    display:block;
+    margin:0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .about-us{
+         padding-top:20px;   
+    }
+    .team-member{
+         margin-bottom:40px; 
+        min-height:0px;
+    }
+    .about-us img{
+        max-width:300px;   
+    }
+}
+@media screen and (max-width: 479px) {
+    .about-us img{
+        max-width:300px; 
+        width:90%;
+    }
+}
+
+
+/* CONTACT STYLES */
+
+.contact{
+     text-align:center;   
+}
+
+.contact img{
+    max-width:200px;
+    display:block;
+    margin:0 auto;
+}
+
+.contact h3{
+     font-family:'Avenir Next';
+    font-size:.9em;
+}
+
+.contact a{
+     color:#2f2f2f;   
+}
+
+.contact::after{
+    display: none;   
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info{
+         margin-bottom:50px;   
+    }
+}
+
+
+
+
+/**********************************************
+ 404 STYLES
+**********************************************/
+
+.not-found{
+    padding:50px 0 100px 0;
+}
+
+.not-found h1{
+     text-align:center;   
+}
+
+.not-found a{
+    width:200px;
+    font-family:'Avenir Next';
+    padding: 15px 0;
+    border:3px solid #2f2f2f;
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    color:#2f2f2f;
+    transition:0.3s;
+    text-decoration:none;
+    position:relative;
+    top:100px;
+}    
+
+.not-found a:hover{
+     background-color: #00a79d;
+    color:#fff;
+    transition:0.3s;
+}
+
+#mike-guitar {
+    position: relative;
+    width: 200px;
+    //float:left;
+
+    animation-name: dance;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -webkit-animation-name: dance;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+@-moz-keyframes dance {
+    0% {
+        -moz-transform: translateY(0);
+    }
+    50% {
+        -moz-transform: translateY(100px);
+    }
+}
+@-webkit-keyframes dance {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(100px);
+    }
+}
+@keyframes dance {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .not-found a{
+         top:20px;   
+    }
+}
+
+
+
+
+
